@@ -56,37 +56,40 @@ const ChooseUs = () => {
 
   return (
     <>
-    <div style={{ backgroundColor: "#D9D9D93D" }}>
-
-      <Container
-        style={{ backgroundColor: "#F6F6F6" }}
-        className="pt-5 mt-5 mb-5 pb-5"
-      >
-        <Row className="text-center mb-5">
-          <h1 style={{ fontSize: 40, fontWeight: 700 }}>Why Choose Us?</h1>
-          <p style={{ fontSize: 18, marginTop: 15 }}>
-            Comprehensive export services designed to meet your business needs
-            and <br /> ensure smooth international trade.
-          </p>
-        </Row>
-        <Row className="mb-5 pb-4">
-          {carrds.map((cad) => (
-            <Col md={4} key={cad.id}>
-              <Card className="p-4 cards mb-3">
-                <div className="ms-3">
-                  <img src={cad.img} alt="global logo" className="img-fluid" />
-                </div>
-                <Card.Body>
-                  <Card.Title>{cad.text}</Card.Title>
-                  <Card.Text>{cad.text1}</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-        <Journey />
-      </Container>
-    </div>
+      <div style={{ backgroundColor: "#D9D9D93D" }}>
+        <Container
+          style={{ backgroundColor: "#F6F6F6" }}
+          className="py-5 mt-5 mb-5 "
+        >
+          <Row className="text-center mb-5">
+            <h1 style={{ fontSize: 40, fontWeight: 700 }}>Why Choose Us?</h1>
+            <p style={{ fontSize: 18, marginTop: 15 }}>
+              Comprehensive export services designed to meet your business needs
+              and <br /> ensure smooth international trade.
+            </p>
+          </Row>
+          <Row className="mb-5 pb-4">
+            {carrds.map((cad) => (
+              <Col md={4} key={cad.id}>
+                <Card className="p-4 cards mb-3">
+                  <div className="ms-3">
+                    <img
+                      src={cad.img}
+                      alt="global logo"
+                      className="img-fluid"
+                    />
+                  </div>
+                  <Card.Body>
+                    <Card.Title>{cad.text}</Card.Title>
+                    <Card.Text>{cad.text1}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+          <Journey />
+        </Container>
+      </div>
     </>
   );
 };

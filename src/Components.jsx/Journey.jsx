@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Container, Row, Stack } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 const Journey = () => {
   const styl = {
@@ -11,9 +10,7 @@ const Journey = () => {
       fontSize: 14,
     },
     butt: {
-      color: "white",
-      border: "2px solid white",
-      fontSize: 14,
+      
     },
   };
   return (
@@ -36,14 +33,10 @@ const Journey = () => {
             gap={2}
             style={{ width: "fit-content" }}
           >
-            <Button size="lg" style={styl.but}>
+            <button size="lg" className="butt">
               Get Free Quote
-            </Button>
-            <button
-              size="lg"
-              className="ms-4 my-buttonnn"
-              // style={styl.butt}
-            >
+            </button>
+            <button size="lg" className="ms-4 my-buttonnn">
               Schedule Call
             </button>
           </Stack>

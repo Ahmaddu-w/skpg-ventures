@@ -60,7 +60,7 @@ const ProductSec1 = () => {
               </div>
             </Col>
           </Row>
-          <Row className="mt-5  p-0 p-sm-5 p-md-0">
+          <Row className="py-5 ">
             <Col className="mb-5 mb-lg-0">
               <div>
                 <h4>Cow Gallstones</h4>
@@ -100,7 +100,7 @@ const ProductSec1 = () => {
               <img src={gall} alt="brown horn" className="img-fluid" />
             </Col>
           </Row>
-          <Row className="mt-5 p-5">
+          <Row className=" py-5">
             <Col sm={12} md={6}>
               <img src={hornss} alt="brown horn" className="img-fluid" />
             </Col>
@@ -141,7 +141,7 @@ const ProductSec1 = () => {
             </Col>
           </Row>
 
-          <Row className="mt-5 pt-5">
+          <Row className=" py-5">
             <Col>
               <div>
                 <h4>Premium Charcoal</h4>
@@ -181,7 +181,7 @@ const ProductSec1 = () => {
               <img src={charcoal} alt="brown horn" className="img-fluid" />
             </Col>
           </Row>
-          <Row className="mt-5 pt-5">
+          <Row className=" py-5">
             <Col sm={12} md={6}>
               <img src={leaves} alt="green leaves" className="img-fluid" />
             </Col>

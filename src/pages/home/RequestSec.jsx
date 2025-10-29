@@ -1,6 +1,5 @@
 import React, { useState } from "react"; 
 import { Col, Container, Row, Form } from "react-bootstrap";
-
 import skull from "../../images/skull.png";
 import Buttons from "../../Components.jsx/Buttons";
 
@@ -118,8 +117,10 @@ const Request = () => {
                 <Form.Label className="mb-4">
                   {messageCharCount}/{MAX_CHARACTERS} characters
                 </Form.Label>
+                  <div className="text-center">
 
                 <Buttons text="Send Message" type="submit" />
+                  </div>
               </Row>
             </Form>
           </Col>
