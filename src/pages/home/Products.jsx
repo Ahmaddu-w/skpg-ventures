@@ -60,7 +60,7 @@ const Products = () => {
           ))}
 
           <Link to="" className="text-dark">
-            <p className="text-end" style={{ fontSize: 14, fontWeight: 600 }}>
+            <p className="text-md-end text-center" style={{ fontSize: 14, fontWeight: 600 }}>
               See More <BsArrowRight />
             </p>
           </Link>

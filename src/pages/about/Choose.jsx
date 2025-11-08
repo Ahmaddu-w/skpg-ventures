@@ -6,10 +6,10 @@ const Choose = () => {
   const styl = { fontWeight: 700, fontSize: 40 };
   return (
     <>
-      <div className="mt-5 pt-5 pb-5">
+      <div className="mt-5 py-5">
         <Container fluid>
           <Row style={{ backgroundColor: "#D9D9D93D" }}>
-            <Col className="justify-content-center d-flex flex-column p-5 ms-5">
+            <Col className="justify-content-center d-flex flex-column p-3 p-md-5 ms-3 ms-md-5">
               <div>
                 <h1 style={styl}>Why Choose Us?</h1>
               </div>

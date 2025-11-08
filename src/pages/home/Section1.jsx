@@ -25,7 +25,7 @@ const Section1 = () => {
           </p>
         </Row>
         <Row className="mt-5 mb-5 pb-5">
-          <Col sm={12} md={6}>
+          <Col sm={12} md={6} className="mb-3">
             <img src={team} alt="team working" className="img-fluid" />
           </Col>
           <Col>

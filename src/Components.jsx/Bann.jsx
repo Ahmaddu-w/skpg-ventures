@@ -29,7 +29,7 @@ const Bann = ({ always, neww, imageImport }) => {
     <Container fluid className="p-0">
       <Row className="mx-0">
         <div
-          className="d-flex justify-content-center align-items-center text-light fw-bold flex-column text-center py-5 py-md-0"
+          className="d-flex justify-content-center align-items-center text-light fw-bold flex-column text-center py-5 py-md-0 bgg"
           style={ban}
         >
           <div style={BlurBan}></div>

@@ -1,226 +1,137 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
+import ProductItem from "./ProductItem"; // Import the new component
 import horn from "../../images/premiumhorn.png";
 import gall from "../../images/gallstones.png";
 import hornss from "../../images/hornss.png";
 import leaves from "../../images/leaves.png";
 import charcoal from "../../images/charcoal.png";
-import Buttons from "../../Components.jsx/Buttons";
 
 const ProductSec1 = () => {
+  const products = [
+    {
+      title: "Premium Cow Horns",
+      description:
+        "High-quality cow horns for manufacturing, crafts, and traditional applications. Carefully processed and graded for various industrial uses.",
+      imageSrc: horn,
+      imageAlt: "brown cow horn",
+      specifications: [
+        "Grade A Quality",
+        "Various sizes",
+        "Export Ready Packaging",
+        "Certified Processing",
+      ],
+      applications: [
+        "Traditional Medicine",
+        "Industrial Manufacturing",
+        "Decorative items/Handicraft",
+      ],
+      reverse: false,
+    },
+    {
+      title: "Cow Gallstones",
+      description:
+        "Pharmaceutical grade cow gallstones for traditional medicine and research applications. Sourced and processed under strict quality controls.",
+      imageSrc: gall,
+      imageAlt: "cow gallstones",
+      specifications: [
+        "Pharmaceutical Grade",
+        "Lab Tested",
+        "Medical Applications",
+        "Quality Certified",
+      ],
+      applications: [
+        "Traditional Chinese Medicine",
+        "Pharmaceutical Research",
+        "Medical Applications",
+      ],
+      reverse: true,
+    },
+    {
+      title: "Premium Cow Bones",
+      description:
+        "High-quality cow bones for manufacturing, crafts, and traditional applications. Carefully processed and graded for various industrial uses.",
+      imageSrc: hornss,
+      imageAlt: "cow bones",
+      specifications: [
+        "Industrial Grade",
+        "Multiple Applications",
+        "Bulk Available",
+        "Certified Processing",
+      ],
+      applications: [
+        "Traditional Craft",
+        "Industrial Application",
+        "Bone Meal Production",
+      ],
+      reverse: false,
+    },
+    {
+      title: "Premium Charcoal",
+      description:
+        "High-quality charcoal for industrial and domestic applications. Sustainably produced with consistent burning properties.",
+      imageSrc: charcoal,
+      imageAlt: "premium charcoal",
+      specifications: [
+        "High Heat Output",
+        "Low Burning",
+        "Low Ash Content",
+        "Eco Friendly",
+      ],
+      applications: [
+        "Industrial Heating",
+        "Water Filtration",
+        "BBQ & Grilling",
+      ],
+      reverse: true,
+    },
+    {
+      title: "Green Leaves",
+      description:
+        "Fresh and dried green leaves for herbal, pharmaceutical, and traditional medicine industries. Carefully harvested and processed.",
+      imageSrc: leaves,
+      imageAlt: "green leaves",
+      specifications: [
+        "Fresh & Dried",
+        "Herbal Grade",
+        "Pharmaceutical Use",
+        "Organic Certified",
+      ],
+      applications: [
+        "Traditional Medicine",
+        "Tea Production",
+        "Herbal Supplements",
+      ],
+      reverse: false,
+    },
+  ];
+
   return (
     <>
       <div style={{ backgroundColor: "#D9D9D93D" }}>
-        <Container className=" mb-5">
-          <Row className="text-center  mb-5 pt-5 pb-5">
-            <h1 style={{ fontWeight: 700 }}>Our Products</h1>
-            <p style={{ fontSize: 18 }}>
+        <Container className="py-5">
+          <Row className="text-center mb-4 mb-lg-5">
+            <h1 className="fw-bold fs-1">Our Products</h1>
+
+            <p className="fs-5 px-lg-5 mx-lg-5">
               Discover our comprehensive range of natural products, each
-              carefully sourced <br /> and processed to meet international
-              quality standards
+              carefully sourced and processed to meet international quality
+              standards.
             </p>
           </Row>
-          <Row className=" pb-5 ">
-            <Col sm={12} md={6}>
-              <img src={horn} alt="brown horn" className="img-fluid" />
-            </Col>
-            <Col>
-              <div>
-                <h4>Premium Cow Horns</h4>
-                <p>
-                  High-quality cow horns for manufacturing, crafts, and
-                  traditional <br /> applications. Carefully processed and
-                  graded for various industrial <br /> uses.
-                </p>
-                <div className="mt-4">
-                  <ul className="list-unstyled">
-                    <li className="fw-bold">Specifications:</li>
-                    <li>Grade A Quality</li>
-                    <li>Various sizes</li>
-                    <li>Export Ready Packaging</li>
-                    <li>Certified Processing</li>
-                  </ul>
-                </div>
-                <div
-                  className="d-flex flex-column gap-1 mb-3"
-                  style={{ width: "fit-content" }}
-                >
-                  <p className="fw-bold">Applications</p>
-                  <mark style={{ backgroundColor: "#C5C6E154" }}>
-                    Traditional Medicine
-                  </mark>
-                  <mark style={{ backgroundColor: "#C5C6E154" }}>
-                    Industrial Manufacturing
-                  </mark>
-                  <mark style={{ backgroundColor: "#C5C6E154" }}>
-                    Decorative items/Handicraft
-                  </mark>
-                </div>
-                <Buttons text="Make a Request" />
-              </div>
-            </Col>
-          </Row>
-          <Row className="py-5 ">
-            <Col className="mb-5 mb-lg-0">
-              <div>
-                <h4>Cow Gallstones</h4>
-                <p>
-                  Pharmaceutical grade cow gallstones for traditional medicine
-                  and research applications. Sourced and processed under strict
-                  quality controls.
-                </p>
-                <div className="mt-4">
-                  <ul className="list-unstyled">
-                    <li className="fw-bold">Specifications:</li>
-                    <li>Pharmaceutical Grade</li>
-                    <li>Lab Tested</li>
-                    <li>Medical Applications</li>
-                    <li>Quality Certified</li>
-                  </ul>
-                </div>
-                <div
-                  className="d-flex flex-column gap-1 mb-3"
-                  style={{ width: "fit-content" }}
-                >
-                  <p className="fw-bold">Applications</p>
-                  <mark style={{ backgroundColor: "#C5C6E154" }}>
-                    Traditional Chinese Medicine
-                  </mark>
-                  <mark style={{ backgroundColor: "#C5C6E154" }}>
-                    Pharmaceutical Research
-                  </mark>
-                  <mark style={{ backgroundColor: "#C5C6E154" }}>
-                    Medical Applications
-                  </mark>
-                </div>
-                <Buttons text="Make a Request" />
-              </div>
-            </Col>
-            <Col sm={12} md={6}>
-              <img src={gall} alt="brown horn" className="img-fluid" />
-            </Col>
-          </Row>
-          <Row className=" py-5">
-            <Col sm={12} md={6}>
-              <img src={hornss} alt="brown horn" className="img-fluid" />
-            </Col>
-            <Col>
-              <div>
-                <h4>Premium Cow Bones</h4>
-                <p>
-                  High-quality cow horns for manufacturing, crafts, and
-                  traditional <br /> applications. Carefully processed and
-                  graded for various industrial <br /> uses.
-                </p>
-                <div className="mt-4">
-                  <ul className="list-unstyled">
-                    <li className="fw-bold">Specifications:</li>
-                    <li>Industrial Grade</li>
-                    <li>Multiple Applications</li>
-                    <li>Bulk Available</li>
-                    <li>Certified Processing</li>
-                  </ul>
-                </div>
-                <div
-                  className="d-flex flex-column gap-1 mb-3"
-                  style={{ width: "fit-content" }}
-                >
-                  <p className="fw-bold">Applications</p>
-                  <mark style={{ backgroundColor: "#C5C6E154" }}>
-                    Traditional Craft
-                  </mark>
-                  <mark style={{ backgroundColor: "#C5C6E154" }}>
-                    Industrial Application
-                  </mark>
-                  <mark style={{ backgroundColor: "#C5C6E154" }}>
-                    Bone Meal Production
-                  </mark>
-                </div>
-                <Buttons text="Make a Request" />
-              </div>
-            </Col>
-          </Row>
 
-          <Row className=" py-5">
-            <Col>
-              <div>
-                <h4>Premium Charcoal</h4>
-                <p>
-                  High-quality charcoal for industrial and domestic
-                  applications. Sustainably produced with consistent burning
-                  properties.
-                </p>
-                <div className="mt-4">
-                  <ul className="list-unstyled">
-                    <li className="fw-bold">Specifications:</li>
-                    <li>High Heat Output</li>
-                    <li>Low Burning</li>
-                    <li>Low Ash Content</li>
-                    <li>Eco Friendly</li>
-                  </ul>
-                </div>
-                <div
-                  className="d-flex flex-column gap-1 mb-3"
-                  style={{ width: "fit-content" }}
-                >
-                  <p className="fw-bold">Applications</p>
-                  <mark style={{ backgroundColor: "#C5C6E154" }}>
-                    Industrial Heating
-                  </mark>
-                  <mark style={{ backgroundColor: "#C5C6E154" }}>
-                    Water Filtration
-                  </mark>
-                  <mark style={{ backgroundColor: "#C5C6E154" }}>
-                    BBQ & Grilling
-                  </mark>
-                </div>
-                <Buttons text="Make a Request" />
-              </div>
-            </Col>
-            <Col sm={12} md={6}>
-              <img src={charcoal} alt="brown horn" className="img-fluid" />
-            </Col>
-          </Row>
-          <Row className=" py-5">
-            <Col sm={12} md={6}>
-              <img src={leaves} alt="green leaves" className="img-fluid" />
-            </Col>
-            <Col>
-              <div>
-                <h4>Green Leaves</h4>
-                <p>
-                  Fresh and dried green leaves for herbal, pharmaceutical, and
-                  traditional medicine industries. Carefully harvested and
-                  processed.
-                </p>
-                <div className="mt-4">
-                  <ul className="list-unstyled">
-                    <li className="fw-bold">Specifications:</li>
-                    <li>Fresh & Dried</li>
-                    <li>Herbal Grade</li>
-                    <li>Pharmaceutical Use</li>
-                    <li>Organic Certified</li>
-                  </ul>
-                </div>
-                <div
-                  className="d-flex flex-column gap-1 mb-3"
-                  style={{ width: "fit-content" }}
-                >
-                  <p className="fw-bold">Applications</p>
-                  <mark style={{ backgroundColor: "#C5C6E154" }}>
-                    Traditional Medicine
-                  </mark>
-                  <mark style={{ backgroundColor: "#C5C6E154" }}>
-                    Tea Production
-                  </mark>
-                  <mark style={{ backgroundColor: "#C5C6E154" }}>
-                    Herbal Supplements
-                  </mark>
-                </div>
-                <Buttons text="Make a Request" />
-              </div>
-            </Col>
-          </Row>
+            {products.map((product, index) => (
+            <ProductItem
+              key={index}
+              title={product.title}
+              description={product.description}
+              imageSrc={product.imageSrc}
+              imageAlt={product.imageAlt}
+              specifications={product.specifications}
+              applications={product.applications}
+              reverse={product.reverse}
+            />
+          ))}
         </Container>
       </div>
     </>

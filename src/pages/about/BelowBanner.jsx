@@ -2,25 +2,28 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import bones from "../../images/bones.png";
 
+const BRAND_BLUE = "#181A88";
+
 const BelowBanner = () => {
-  const widt = {
-    fontWeight: 500,
-  };
-
-  const blueColor = { color: "#181A88" };
-
   return (
     <>
-      <div style={{ backgroundColor: "#D9D9D93D" }}>
-        <Container className="py-5" style={{ backgroundColor: "#F6F6F6" }}>
-          <Row>
-            <h1 className="text-center mb-5">About Us</h1>
-
-            <Col sm={12} md={6} className="mb-5">
-              <img src={bones} alt="picture of bones" className="img-fluid" />
+      <div className="bg-light py-5">
+        <Container
+          className="p-4 p-md-5 rounded-3 "
+          style={{ backgroundColor: "#F6F6F6" }}
+        >
+          <Row className="align-items-center">
+            <h1 className="text-center mb-5 fw-bold fs-2 fs-lg-1">About Us</h1>
+            <Col sm={12} md={6} className="mb-4 mb-md-0">
+              <img
+                src={bones}
+                alt="picture of bones"
+                className="img-fluid rounded-3"
+              />
             </Col>
+
             <Col sm={12} md={6}>
-              <div style={widt} className="p-3 p-md-0">
+              <div className="fw-normal fs-6">
                 <p className="mb-4">
                   Akeredolu SPKG Ventures is a leading international export
                   company dedicated to sourcing, processing, and delivering
@@ -48,12 +51,14 @@ const BelowBanner = () => {
         </Container>
       </div>
 
-      <Container fluid className="py-4">
-        <Row className="p-5" style={{ backgroundColor: "#181A88" }}>
-          <Col md={6} className="p-3 p-md-5">
-            <div className="bg-light p-4 p-md-5 rounded-2">
-              <h1 style={blueColor}>Our Mission</h1>
-              <p className="mt-3 fw-bold">
+      <Container fluid className="py-5" style={{ backgroundColor: BRAND_BLUE }}>
+        <Row className="justify-content-center px-3 px-md-5">
+          <Col lg={6} className="mb-4 mb-lg-0">
+            <div className="bg-white p-4 p-md-5 rounded-3 shadow">
+              <h2 className="fw-bold mb-3 fs-3" style={{ color: BRAND_BLUE }}>
+                Our Mission
+              </h2>
+              <p className="mt-3 fw-bold fs-6">
                 As the company that carries the largest and most diverse stock
                 of horn, bone and antler in the whole of Africa and has been in
                 service for over 25 years, Our Mission is to be the world's most
@@ -66,18 +71,17 @@ const BelowBanner = () => {
             </div>
           </Col>
 
-          <Col md={6} className="p-3 p-md-5 mt-4 mt-md-0">
-            <div className="bg-light p-4 p-md-5 rounded-2">
-              <h1 style={blueColor}>Our Mission</h1>
-              <p className="mt-3 fw-bold">
+          <Col lg={6}>
+            <div className="bg-white p-4 p-md-5 rounded-3 shadow">
+              <h2 className="fw-bold mb-3 fs-3" style={{ color: BRAND_BLUE }}>
+                Our Vision
+              </h2>
+              <p className="mt-3 fw-bold fs-6">
                 To create a sustainable global network that connects traditional
                 medicine practitioners, manufacturers, and artisans worldwide
                 with ethically sourced natural materials, fostering economic
                 growth while preserving cultural heritage and environmental
-                integrity. 
-                <br /><br />
-                <br />
-                
+                integrity.
               </p>
             </div>
           </Col>

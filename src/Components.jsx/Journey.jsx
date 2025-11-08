@@ -9,15 +9,13 @@ const Journey = () => {
       border: "2px solid white",
       fontSize: 14,
     },
-    butt: {
-      
-    },
+    butt: {},
   };
   return (
     <>
       <Container
         style={{ backgroundColor: "#181A88" }}
-        className="rounded-4 mt-5 pt-"
+        className="rounded-4 mt-5 p"
       >
         <Row className="text-center text-light p-5">
           <h1 style={{ fontWeight: 800, fontSize: 24 }}>
@@ -28,7 +26,7 @@ const Journey = () => {
             help you grow your business globally.
           </p>
           <Stack
-            className="mt-3 mb-5 text-center mx-auto"
+            className="mt-3 mb-5 text-center mx-auto d-flex flex-column flex-md-row"
             direction="horizontal"
             gap={2}
             style={{ width: "fit-content" }}
