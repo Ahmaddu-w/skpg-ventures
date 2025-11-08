@@ -17,7 +17,7 @@ const BelowBanner = () => {
             <Col sm={12} md={6} className="mb-4 mb-md-0">
               <img
                 src={bones}
-                alt="picture of bones"
+                alt="bones"
                 className="img-fluid rounded-3"
               />
             </Col>

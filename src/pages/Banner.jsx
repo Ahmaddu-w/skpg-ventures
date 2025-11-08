@@ -1,8 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/esm/Container";
-import hero from "../images/heroImage.png";
-import { Button } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 
 const Banner = (prop) => {
   const navigate = useNavigate();

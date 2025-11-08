@@ -1,16 +1,8 @@
 import React from "react";
-import { Button, Container, Row, Stack } from "react-bootstrap";
+import { Container, Row, Stack } from "react-bootstrap";
 
 const Journey = () => {
-  const styl = {
-    but: {
-      color: "blue",
-      backgroundColor: "white",
-      border: "2px solid white",
-      fontSize: 14,
-    },
-    butt: {},
-  };
+  
   return (
     <>
       <Container

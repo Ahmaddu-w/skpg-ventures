@@ -10,17 +10,7 @@ const Header = () => {
   const handleNavigate = () => {
     navigate("/request");
   };
-  const butto = {
-    backgroundColor: "#181A88",
-    color: "white",
-    padding: "10px 20px",
-    borderRadius: 10,
-    border: "none",
-    display: "block",
-    width: "100%",
-    textAlign: "center",
-  };
-
+  
   return (
     <>
       <Navbar bg="light" data-bs-theme="light" expand="lg" className="py-3">

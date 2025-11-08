@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Nav, Row, Stack } from "react-bootstrap";
+import { Col, Container, Row, Stack } from "react-bootstrap";
 import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 import { BsClockFill, BsGeoAltFill, BsTelephoneFill } from "react-icons/bs";
@@ -18,7 +18,9 @@ const Footer = () => {
         <Container>
           <Row>
             <Col xs={12} lg={4} className="mb-4">
-              <img src={logo} alt="brand logo" className="img-fluid" />
+              <Link as={Link} to="/">
+                <img src={logo} alt="brand logo" className="img-fluid" />
+              </Link>
               <p className="mb-4">
                 Leading international export company specializing in premium
                 quality natural products. We bridge global markets with
@@ -71,13 +73,21 @@ const Footer = () => {
               <ul className="list-unstyled">
                 <li className="fw-bold">COMPANY</li>
 
-                <Link className="text-decoration-none text-dark">
+                <Link
+                  as={Link}
+                  to="/about"
+                  className="text-decoration-none text-dark"
+                >
                   <li className="mt-4">
                     <FaPlus size={8} color="#181A88" className="me-2" />
                     About Us
                   </li>
                 </Link>
-                <Link className="text-decoration-none text-dark">
+                <Link
+                  as={Link}
+                  to="/request"
+                  className="text-decoration-none text-dark"
+                >
                   <li className="mt-2">
                     <FaPlus size={8} color="#181A88" className="me-2" />
                     Make a Request

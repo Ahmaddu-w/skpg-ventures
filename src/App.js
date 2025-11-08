@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/home/Homepage";
@@ -7,7 +6,6 @@ import About from "./pages/about/About";
 import ProductPage from "./pages/product/ProductPage";
 import Contact from "./pages/contact/Contact";
 import RequestPage from "./pages/request/RequestPage";
-
 
 function App() {
   return (

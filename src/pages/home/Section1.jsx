@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import team from "../../images/teamw.png";
 import global from "../../images/global.png";
 import sustain from "../../images/sustain.png";
